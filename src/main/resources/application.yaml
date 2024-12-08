@@ -1,1 +1,17 @@
-spring.application.name=contragent-api-service
+spring:
+  application:
+    name: contragent-api-service
+  cache:
+    type: redis
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      timeout: 2000
+app:
+  dataManager:
+    url: "localhost:8080"
+  ruleEvaluation:
+    url: "localhost:8081"
+server:
+  port: 8083

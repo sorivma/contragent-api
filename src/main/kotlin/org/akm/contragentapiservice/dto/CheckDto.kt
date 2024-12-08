@@ -1,4 +1,9 @@
 package org.akm.contragentapiservice.dto
 
-class CheckDto {
-}
+import com.fasterxml.jackson.databind.JsonNode
+
+data class CheckDto(
+    val inn: String,
+    val data: JsonNode?,
+    val type: String
+)
